@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".FeedbackDialogFragment"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/FeedbackFragment_MarginStart"
+    android:layout_marginTop="@dimen/FeedbackFragment_MarginTop"
+    android:gravity="start">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="@string/FeedbackFragment_FeedBackTitle"
+        android:textColor="@color/accent"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/FeedBackTextSize"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/FeedBackLinearLayout_Margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FeedbackFragment_ExperienceQuestion"/>
+
+            <RadioGroup
+                android:id="@+id/FeedbackFragment_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/FeedbackFragment_RadioGroup_MarginTop"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/FeedbackFragment_RadioButton_Happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/happy_radio_button_for_feedback"
+                    android:layout_marginEnd="@dimen/FeedbackFragment_RadioButton_Happy_MarginEnd"/>
+                <RadioButton
+                    android:id="@+id/FeedbackFragment_RadioButton_Sad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/sad_radio_button_for_feedback"/>
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/FeedBack_TextInputLayout_Width"
+                android:layout_height="@dimen/FeedBack_TextInputLayout_Height"
+                android:hint="@string/FeedbackFragment_Hint"
+                android:layout_marginTop="@dimen/FeedBack_TextInputLayout_MarginTop"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FeedbackFragment_TextInputEditText_Experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/FeedbackFragment_TextInputEditText_Experience_Height"
+                    android:gravity="start"
+                    android:layout_margin="@dimen/FeedbackFragment_TextInputEditText_Experience_Margin"
+                    android:paddingTop="@dimen/FeedbackFragment_TextInputEditText_Experience_PaddingTop"
+                    android:textSize="@dimen/FeedbackFragment_TextInputEditText_Experience_TextSize"
+                    android:maxLength="500"
+                    android:textColor="@color/primary_text"/>
+                <TextView
+                    android:id="@+id/FeedbackFragment_TextView_ExperienceLetterLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/500"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/FeedbackFragment_TextView_ExperienceSentenceLength_TextSize"
+                    android:layout_gravity="end"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/FeedbackFragment_ImageButton_Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send"
+                android:stateListAnimator="@null"
+                android:background="#00000000"
+                android:textColor="@color/primary_text"
+                android:layout_gravity="end"
+                android:padding="@dimen/FeedbackFragment_ImageButton_Submit_Padding"
+                android:layout_marginTop="@dimen/FeedbackFragment_ImageButton_Submit_MarginTop"
+                android:layout_marginBottom="@dimen/FeedbackFragment_ImageButton_Submit_marginBottom"
+                android:foreground="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

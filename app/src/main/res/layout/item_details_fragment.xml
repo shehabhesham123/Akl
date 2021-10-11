@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F4F4">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ItemDetailsFragment_AppBar_Height"
+        android:background="@color/primary_light">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|enterAlways">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ItemDetailsFragment_ViewPager_Images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:id="@+id/ItemDetailsFragment_DotsIndicator_Images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/ItemDetailsFragment_DotsIndicator_Images_MarginBottom"
+                app:dotsColor="@color/primary_light"
+                app:dotsStrokeWidth="@dimen/ItemDetailsFragment_DotsIndicator_Images_DotsStrokeWidth"
+                app:dotsSize="@dimen/ItemDetailsFragment_DotsIndicator_Images_DotsSize"
+                app:dotsSpacing="@dimen/ItemDetailsFragment_DotsIndicator_Images_DotsSpacing" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/ItemDetailsFragment_LinearLayout_ContainerAll_Padding"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/ItemDetailsFragment_CardView_CardCornerRadius"
+                app:cardElevation="@dimen/ItemDetailsFragment_CardView_CardElevation"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ItemDetailsFragment_TextView_Name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_TextView_Name_MarginStart"
+                        android:layout_marginEnd="@dimen/ItemDetailsFragment_TextView_Name_MarginEnd"
+                        android:maxLines="1"
+                        android:maxLength="54"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:fontFamily="@font/allan"
+                        android:textSize="@dimen/ItemDetailsFragment_TextView_Name_TextSize"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RatingBar
+                        android:id="@+id/ItemDetailsFragment_RatingBar_Rate"
+                        style="?attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_RatingBar_Rate_MarginStart"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_RatingBar_Rate_MarginTop"
+                        android:layout_marginBottom="@dimen/ItemDetailsFragment_RatingBar_Rate_MarginBottom"
+                        android:numStars="5"
+                        android:progressTint="@color/star"
+                        android:secondaryProgressTint="@color/star"
+                        android:stepSize=".01"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ItemDetailsFragment_TextView_Name" />
+
+                    <LinearLayout
+                        android:id="@+id/ItemDetailsFragment_LinearLayout_Container_Reviewer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_LinearLayout_Container_Reviewer_MarginStart"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_LinearLayout_Container_Reviewer_MarginTop"
+                        app:layout_constraintStart_toEndOf="@+id/ItemDetailsFragment_RatingBar_Rate"
+                        app:layout_constraintTop_toBottomOf="@+id/ItemDetailsFragment_TextView_Name">
+
+                        <TextView
+                            android:id="@+id/ItemDetailsFragment_TextView_ReviewersNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/ItemDetailsFragment_TextView_ReviewersNumber_TextSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:text="@string/ItemDetailsFragment_Reviewers"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/ItemDetailsFragment_ReviewersSentence_TextSize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_LinearLayout_Container_Price_MarginTop"
+                        android:layout_marginEnd="@dimen/ItemDetailsFragment_LinearLayout_Container_Price_MarginEnd"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/ItemDetailsFragment_LinearLayout_Container_Reviewer"
+                        app:layout_constraintTop_toBottomOf="@+id/ItemDetailsFragment_TextView_Name"
+                        app:layout_constraintVertical_bias="0.01999998">
+
+                        <TextView
+                            android:id="@+id/ItemDetailsFragment_TextView_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/amaranth"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/ItemDetailsFragment_TextView_Price_TextSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ItemDetailsFragment_CurrencyCode"
+                            android:fontFamily="@font/amaranth"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/ItemDetailsFragment_CurrencyCode_TextSize" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/ItemDetailsFragment_CardView_CardCornerRadius"
+                app:cardElevation="@dimen/ItemDetailsFragment_CardView_CardElevation"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_IngredientsSentence_MarginStart"
+                        android:text="@string/ItemDetailsFragment_Ingredients"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/ItemDetailsFragment_IngredientsSentence_TextSize"
+                        android:fontFamily="@font/allan"/>
+
+                    <TextView
+                        android:id="@+id/ItemDetailsFragment_TextView_Ingredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/ItemDetailsFragment_TextView_Ingredients_Margin"
+                        android:fontFamily="@font/abel"
+                        android:textSize="@dimen/ItemDetailsFragment_TextView_Ingredients_TextSize"
+                        android:textColor="@color/primary_text" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/ItemDetailsFragment_CardView_CardCornerRadius"
+                app:cardElevation="@dimen/ItemDetailsFragment_CardView_CardElevation"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/ItemDetailsFragment_SizeSentence_Margin"
+                        android:text="@string/ItemDetailsFragment_Sizes"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/ItemDetailsFragment_SizeSentence_TextSize"
+                        android:fontFamily="@font/allan" />
+
+                    <ListView
+                        android:id="@+id/ItemDetailsFragment_ListView_listOfSize"
+                        android:scrollbars="none"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dividerHeight="@dimen/ItemDetailsFragment_ListOfSize_DividerHeight"
+                        android:divider="#ffffff"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_ListOfSize_MarginStart"
+                        android:layout_marginEnd="@dimen/ItemDetailsFragment_ListOfSize_MarginEnd">
+
+                    </ListView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/ItemDetailsFragment_CardView_CardCornerRadius"
+                app:cardElevation="@dimen/ItemDetailsFragment_CardView_CardElevation"
+                app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/ItemDetailsFragment_QuantitySentence_Margin"
+                        android:text="@string/ItemDetailsFragment_Quantity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/ItemDetailsFragment_QuantitySentence_TextSize"
+                        android:fontFamily="@font/allan" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/ItemDetailsFragment_FloatingActionButton_Subtract"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_FloatingActionButton_Subtract_MarginTop"
+                        android:layout_marginStart="@dimen/ItemDetailsFragment_FloatingActionButton_Subtract_MarginStart"
+                        android:layout_marginBottom="@dimen/ItemDetailsFragment_FloatingActionButton_Subtract_MarginBottom"
+                        android:src="@drawable/ic_minus" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/ItemDetailsFragment_FloatingActionButton_Add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/ItemDetailsFragment_FloatingActionButton_Add_MarginEnd"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_FloatingActionButton_Add_MarginTop"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="@dimen/ItemDetailsFragment_FloatingActionButton_Add_MarginBottom"
+                        android:src="@drawable/ic_add_24" />
+
+                    <TextView
+                        android:id="@+id/ItemDetailsFragment_TextView_Quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/ItemDetailsFragment_TextView_Quantity_MarginTop"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/ItemDetailsFragment_TextView_Quantity_TextSize" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/ItemDetailsFragment_Button_AddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ItemDetailsFragment_AddToCart"
+                android:fontFamily="@font/abel"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/ItemDetailsFragment_Button_AddToCart_Margin"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

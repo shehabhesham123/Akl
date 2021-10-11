@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--       Announcement Dimens    -->
+    <dimen name="Announcement_TextView_Date_marginStart">16dp</dimen>
+    <dimen name="Announcement_TextView_Date_marginBottom">8dp</dimen>
+    <dimen name="Announcement_TextView_Type_marginEnd">13dp</dimen>
+    <dimen name="Announcement_TextView_Type_marginBottom">8dp</dimen>
+    <dimen name="Announcement_TextView_Type_Padding">2dp</dimen>
+    <dimen name="Announcement_TextView_Description_marginBottom">8dp</dimen>
+    <dimen name="Announcement_TextView_Description_PaddingStart">15dp</dimen>
+    <dimen name="Announcement_TextView_Description_TextSize">13sp</dimen>
+    <dimen name="Announcement_TextView_Type_TextSize">12sp</dimen>
+    <dimen name="Announcement_TextView_Date_TextSize">12sp</dimen>
+    <dimen name="Announcement_Height">200dp</dimen>
+
+    <!-- Rating Dialog Fragment Dimens -->
+    <dimen name="RatingDialogFragment_Padding">25dp</dimen>
+    <dimen name="RatingDialogFragment_LinearLayout_ContainerButtons_MarginTop">70dp</dimen>
+    <dimen name="RatingDialogFragment_TextView_Cancel_Padding">5dp</dimen>
+    <dimen name="RatingDialogFragment_TextView_Cancel_TextSize">18sp</dimen>
+    <dimen name="RatingDialogFragment_TextView_Submit_Padding">5dp</dimen>
+    <dimen name="RatingDialogFragment_TextView_Submit_TextSize">18sp</dimen>
+    <dimen name="RatingDialogFragment_TextView_Submit_MarginStart">20dp</dimen>
+    <dimen name="RatingDialogFragment_RatingBar_Rate_MarginTop">10dp</dimen>
+
+    <!-- FeedBack Fragment Dimens   -->
+    <dimen name="FeedbackFragment_MarginStart">15dp</dimen>
+    <dimen name="FeedbackFragment_MarginTop">7dp</dimen>
+    <dimen name="FeedBackTextSize">45sp</dimen>
+    <dimen name="FeedBackLinearLayout_Margin">10dp</dimen>
+    <dimen name="FeedbackFragment_RadioGroup_MarginTop">15dp</dimen>
+    <dimen name="FeedbackFragment_RadioButton_Happy_MarginEnd">25dp</dimen>
+    <dimen name="FeedBack_TextInputLayout_Width">250dp</dimen>
+    <dimen name="FeedBack_TextInputLayout_Height">220dp</dimen>
+    <dimen name="FeedBack_TextInputLayout_MarginTop">15dp</dimen>
+    <dimen name="FeedbackFragment_TextInputEditText_Experience_Height">180dp</dimen>
+    <dimen name="FeedbackFragment_TextInputEditText_Experience_Margin">2dp</dimen>
+    <dimen name="FeedbackFragment_TextInputEditText_Experience_PaddingTop">10dp</dimen>
+    <dimen name="FeedbackFragment_TextInputEditText_Experience_TextSize">17sp</dimen>
+    <dimen name="FeedbackFragment_TextView_ExperienceSentenceLength_TextSize">13sp</dimen>
+    <dimen name="FeedbackFragment_ImageButton_Submit_Padding">5dp</dimen>
+    <dimen name="FeedbackFragment_ImageButton_Submit_MarginTop">12dp</dimen>
+    <dimen name="FeedbackFragment_ImageButton_Submit_marginBottom">15dp</dimen>
+
+
+    <!-- MyOrdersItemView    -->
+    <dimen name="MyOrdersItemView_CardCornerRadius">2dp</dimen>
+    <dimen name="MyOrdersItemView_Height">110dp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerOrderId_MarginTop">2dp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerOrderId_MarginStart">5dp</dimen>
+    <dimen name="MyOrdersItemView_OrderIDSentence_TextSize">15sp</dimen>
+    <dimen name="MyOrdersItemView_TextView_OrderId_TextSize">14sp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerTotalCost_MarginTop">25dp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerTotalCost_MarginStart">5dp</dimen>
+    <dimen name="MyOrdersItemView_TotalCostSentence_TextSize">15sp</dimen>
+    <dimen name="MyOrdersItemView_TextView_TotalCost_TextSize">14sp</dimen>
+    <dimen name="MyOrdersItemView_CurrencyCode">14sp</dimen>
+    <dimen name="MyOrdersItemView_CurrencyCode_MarginStart">2dp</dimen>
+    <dimen name="MyOrdersItemView_TextView_Reorder_Height">30dp</dimen>
+    <dimen name="MyOrdersItemView_TextView_OrderDate_Padding">2dp</dimen>
+    <dimen name="MyOrdersItemView_TextView_OrderDate_TextSize">14sp</dimen>
+
+    <!-- MyOrdersFragment    -->
+    <dimen name="MyOrdersFragment_AppBar_Height">200dp</dimen>
+    <dimen name="MyOrdersFragment_ImageView_Image_Width">150dp</dimen>
+    <dimen name="MyOrdersFragment_ImageView_Image_Height">190dp</dimen>
+    <dimen name="MyOrdersFragment_ImageView_Image_Margin">5dp</dimen>
+    <dimen name="MyOrdersFragment_LinearLayout_Container_OrderId_MarginTop">15dp</dimen>
+    <dimen name="MyOrdersFragment_LinearLayout_Container_OrderId_MarginStart">160dp</dimen>
+    <dimen name="MyOrdersFragment_OrderIDSentence_TextSize">17sp</dimen>
+    <dimen name="MyOrdersFragment_TextView_OrderId_TextSize">16sp</dimen>
+    <dimen name="MyOrdersFragment_LinearLayout_Container_TotalPrice_MarginTop">40dp</dimen>
+    <dimen name="MyOrdersFragment_LinearLayout_Container_TotalPrice_MarginStart">160dp</dimen>
+    <dimen name="MyOrdersFragment_TotalPriceSentence_TextSize">17sp</dimen>
+    <dimen name="MyOrdersFragment_TextView_TotalCost_TextSize">16sp</dimen>
+    <dimen name="MyOrdersFragment_CurrencyCode_TextSize">16sp</dimen>
+    <dimen name="MyOrdersFragment_Button_Edit_Height">40dp</dimen>
+    <dimen name="MyOrdersFragment_Button_Edit_MarginTop">75dp</dimen>
+    <dimen name="MyOrdersFragment_Button_Edit_MarginStart">160dp</dimen>
+    <dimen name="MyOrdersFragment_FrameLayout_Timer_Margin">15dp</dimen>
+    <dimen name="AR_MyOrdersFragment_LinearLayout_Container_OrderId_MarginStart">10dp</dimen>
+    <dimen name="AR_MyOrdersFragment_LinearLayout_Container_TotalPrice_MarginStart">10dp</dimen>
+    <dimen name="AR_MyOrdersFragment_Button_Edit_MarginStart">55dp</dimen>
+    <dimen name="MyOrdersItemView_TextView_OrderDate_Sentence_TextSize">15sp</dimen>
+    <dimen name="MyOrdersItemView_CardElevation">4dp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerDate_MarginTop">45dp</dimen>
+    <dimen name="MyOrdersItemView_LinearLayout_ContainerDate_MarginStart">5dp</dimen>
+
+    <!-- MenuItemView   -->
+    <dimen name="MenuItemView_CardElevation">2dp</dimen>
+    <dimen name="MenuItemView_CardCornerRadius">3dp</dimen>
+    <dimen name="MenuItemView_ImageView_Image_Height">150dp</dimen>
+    <dimen name="MenuItemView_TextView_Name_Margin">5dp</dimen>
+    <dimen name="MenuItemView_TextView_Name_TextSize">20sp</dimen>
+    <dimen name="MenuItemView_LinearLayout_Container_Ingredients_Margin">5dp</dimen>
+    <dimen name="MenuItemView_IngredientsSentence_TextSize">18sp</dimen>
+    <dimen name="MenuItemView_TextView_Ingredients_MarginTop">3dp</dimen>
+    <dimen name="MenuItemView_RatingBar_Rate_MarginStart">7dp</dimen>
+    <dimen name="MenuItemView_RatingBar_Rate_MarginTop">7dp</dimen>
+    <dimen name="MenuItemView_TextView_Rate_Width">20dp</dimen>
+    <dimen name="MenuItemView_TextView_Rate_MarginStart">5dp</dimen>
+    <dimen name="MenuItemView_TextView_Rate_MarginTop">5dp</dimen>
+    <dimen name="MenuItemView_TextView_Rate_TextSize">14sp</dimen>
+    <dimen name="MenuItemView_LinearLayout_Container_Price_Margin">5dp</dimen>
+    <dimen name="MenuItemView_TextView_Price_TextSize">18sp</dimen>
+    <dimen name="MenuItemView_CurrencyCode_TextSize">18sp</dimen>
+
+    <!-- ItemDetailsSizePrice  -->
+    <dimen name="ItemDetailsSizePrice_RadioButton_Size_Margin">5dp</dimen>
+    <dimen name="ItemDetailsSizePrice_RadioButton_Size_TextSize">15sp</dimen>
+    <dimen name="ItemDetailsSizePrice_LinearLayout_ContainerPrice_Margin">5dp</dimen>
+    <dimen name="ItemDetailsSizePrice_TextView_Price_TextSize">17sp</dimen>
+    <dimen name="ItemDetailsSizePrice_TextView_CurrencyCode_TextSize">17sp</dimen>
+
+    <!--  ItemDetailsFragment  -->
+    <dimen name="ItemDetailsFragment_AppBar_Height">200dp</dimen>
+    <dimen name="ItemDetailsFragment_LinearLayout_ContainerAll_Padding">10dp</dimen>
+    <dimen name="ItemDetailsFragment_CardView_CardCornerRadius">5dp</dimen>
+    <dimen name="ItemDetailsFragment_CardView_CardElevation">2dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Name_MarginStart">5dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Name_MarginEnd">5dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Name_TextSize">22sp</dimen>
+    <dimen name="ItemDetailsFragment_RatingBar_Rate_MarginStart">5dp</dimen>
+    <dimen name="ItemDetailsFragment_RatingBar_Rate_MarginTop">20dp</dimen>
+    <dimen name="ItemDetailsFragment_LinearLayout_Container_Reviewer_MarginStart">7dp</dimen>
+    <dimen name="ItemDetailsFragment_LinearLayout_Container_Reviewer_MarginTop">19dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_ReviewersNumber_TextSize">12sp</dimen>
+    <dimen name="ItemDetailsFragment_ReviewersSentence_TextSize">12sp</dimen>
+    <dimen name="ItemDetailsFragment_LinearLayout_Container_Price_MarginTop">10dp</dimen>
+    <dimen name="ItemDetailsFragment_LinearLayout_Container_Price_MarginEnd">8dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Price_TextSize">20sp</dimen>
+    <dimen name="ItemDetailsFragment_CurrencyCode_TextSize">20sp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Ingredients_Margin">7dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Ingredients_TextSize">14sp</dimen>
+    <dimen name="ItemDetailsFragment_IngredientsSentence_MarginStart">5dp</dimen>
+    <dimen name="ItemDetailsFragment_IngredientsSentence_TextSize">20sp</dimen>
+    <dimen name="ItemDetailsFragment_SizeSentence_Margin">10dp</dimen>
+    <dimen name="ItemDetailsFragment_SizeSentence_TextSize">20sp</dimen>
+    <dimen name="ItemDetailsFragment_ListOfSize_DividerHeight">0dp</dimen>
+    <dimen name="ItemDetailsFragment_ListOfSize_MarginStart">10dp</dimen>
+    <dimen name="ItemDetailsFragment_ListOfSize_MarginEnd">10dp</dimen>
+    <dimen name="ItemDetailsFragment_QuantitySentence_Margin">10dp</dimen>
+    <dimen name="ItemDetailsFragment_QuantitySentence_TextSize">20dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Subtract_MarginTop">50dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Subtract_MarginStart">40dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Subtract_MarginBottom">10dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Add_MarginEnd">40dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Add_MarginTop">50dp</dimen>
+    <dimen name="ItemDetailsFragment_FloatingActionButton_Add_MarginBottom">10dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Quantity_MarginTop">50dp</dimen>
+    <dimen name="ItemDetailsFragment_TextView_Quantity_TextSize">30sp</dimen>
+    <dimen name="ItemDetailsFragment_Button_AddToCart_Margin">8dp</dimen>
+    <dimen name="ItemDetailsFragment_DotsIndicator_Images_MarginBottom">10dp</dimen>
+    <dimen name="ItemDetailsFragment_DotsIndicator_Images_DotsSize">12dp</dimen>
+    <dimen name="ItemDetailsFragment_DotsIndicator_Images_DotsSpacing">2dp</dimen>
+    <dimen name="ItemDetailsFragment_DotsIndicator_Images_DotsStrokeWidth">1.5dp</dimen>
+    <dimen name="ItemDetailsFragment_RatingBar_Rate_MarginBottom">7dp</dimen>
+
+    <!-- Toast -->
+    <dimen name="Toast_CardCornerRadius">5dp</dimen>
+    <dimen name="Toast_Image_Width">65dp</dimen>
+    <dimen name="Toast_Image_Height">65dp</dimen>
+    <dimen name="Toast_Image_CardElevation">2dp</dimen>
+    <dimen name="Toast_Image_CardCornerRadius">2dp</dimen>
+    <dimen name="Toast_TextView_Title_TextSize">16sp</dimen>
+    <dimen name="Toast_TextView_TitleSentence_TextSize">13sp</dimen>
+    <dimen name="toast_LinearLayout_Container_Title_MarginStart">70dp</dimen>
+    <dimen name="toast_LinearLayout_Container_Title_MarginTop">7dp</dimen>
+    <dimen name="toast_LinearLayout_Container_Title_MarginEnd">7dp</dimen>
+
+    <!-- CartItem  -->
+    <dimen name="CartItem_CardElevation">4dp</dimen>
+    <dimen name="CartItem_ImageView_Image_Width">100dp</dimen>
+    <dimen name="CartItem_ImageView_Delete_Margin">5dp</dimen>
+    <dimen name="CartItem_ImageView_Image_Height">100dp</dimen>
+    <dimen name="CartItem_TextView_Name_TextSize">16sp</dimen>
+    <dimen name="CartItem_TextView_Name_MarginStart">110dp</dimen>
+    <dimen name="CartItem_TextView_Name_MarginEnd">40dp</dimen>
+    <dimen name="CartItem_TextView_Name_MarginTop">5dp</dimen>
+    <dimen name="CartItem_LinearLayout_Container_Quantity_MarginTop">40dp</dimen>
+    <dimen name="CartItem_LinearLayout_Container_Quantity_MarginStart">120dp</dimen>
+    <dimen name="CartItem_QuantitySentence_TextSize">13sp</dimen>
+    <dimen name="CartItem_TextView_Quantity_TextSize">13sp</dimen>
+    <dimen name="CartItem_LinearLayout_Container_Size_MarginTop">60dp</dimen>
+    <dimen name="CartItem_LinearLayout_Container_Size_MarginStart">120dp</dimen>
+    <dimen name="CartItem_SizeSentence_TextSize">13sp</dimen>
+    <dimen name="CartItem_TextView_Size_TextSize">13sp</dimen>
+    <dimen name="CartItem_LinearLayout_Container_Price_MarginEnd">5dp</dimen>
+    <dimen name="CartItem_TextView_Price_TextSize">17sp</dimen>
+    <dimen name="CartItem_PriceSentence_TextSize">17sp</dimen>
+
+    <!-- Exit Fragment-->
+    <dimen name="ExitFragment_Width">250dp</dimen>
+    <dimen name="ExitFragment_TextSize">20dp</dimen>
+    <dimen name="ExitFragment_Margin">5dp</dimen>
+    <dimen name="ExitFragment_TextView_Yes_MarginTop">80dp</dimen>
+    <dimen name="ExitFragment_TextView_Yes_MarginEnd">10dp</dimen>
+    <dimen name="ExitFragment_TextView_Yes_MarginBottom">5dp</dimen>
+    <dimen name="ExitFragment_TextView_Yes_TextSize">18sp</dimen>
+    <dimen name="ExitFragment_TextView_No_MarginTop">80dp</dimen>
+    <dimen name="ExitFragment_TextView_No_MarginEnd">70dp</dimen>
+    <dimen name="ExitFragment_TextView_No_TextSize">18sp</dimen>
+
+    <!-- StartActivity-->
+    <dimen name="StartActivity_Image_Width">110dp</dimen>
+    <dimen name="StartActivity_Image_Height">110dp</dimen>
+    <dimen name="StartActivity_ProgressBar_MarginTop">40dp</dimen>
+
+    <!-- CartActivity  -->
+    <dimen name="CartActivity_RecyclerView_List_MarginStart">20dp</dimen>
+    <dimen name="CartActivity_RecyclerView_List_MarginEnd">20dp</dimen>
+    <dimen name="CartActivity_RecyclerView_List_MarginBottom">90dp</dimen>
+    <dimen name="CartActivity_LinearLayout_Container_TotalPrice_Margin">7dp</dimen>
+    <dimen name="CartActivity_TotalPriceSentence_TextSize">17sp</dimen>
+    <dimen name="CartActivity_LinearLayout_Container_Price_MarginEnd">5dp</dimen>
+    <dimen name="CartActivity_TextView_Price_TextSize">18sp</dimen>
+    <dimen name="CartActivity_CurrencyCode_TextSize">18sp</dimen>
+
+    <!-- MenuToolbar -->
+    <dimen name="MenuToolbar_Coordinator_Container_Search_Height">45dp</dimen>
+    <dimen name="MenuToolbar_Coordinator_Container_Search_MarginEnd">45dp</dimen>
+    <dimen name="MenuToolbar_PaddingTop">8dp</dimen>
+    <dimen name="MenuToolbar_Coordinator_Container_Search_MarginStart">7dp</dimen>
+    <dimen name="MenuToolbar_EditText_SearchFlied_Height">40dp</dimen>
+    <dimen name="MenuToolbar_EditText_SearchFlied_PaddingEnd">65dp</dimen>
+    <dimen name="MenuToolbar_EditText_SearchFlied_PaddingStart">9dp</dimen>
+    <dimen name="MenuToolbar_EditText_SearchFlied_TextSize">19sp</dimen>
+    <dimen name="MenuToolbar_ImageView_SearchIcon_MarginEnd">10dp</dimen>
+    <dimen name="MenuToolbar_ImageView_Cart_MarginEnd">10dp</dimen>
+    <dimen name="MenuToolbar_PaddingBottom">8dp</dimen>
+    <dimen name="RateItemDialogFragment_TextView_Name_TextSize">24sp</dimen>
+    <dimen name="RateItemDialogFragment_RatingBar_Rate_MarginStart">15dp</dimen>
+    <dimen name="RateItemDialogFragment_RatingBar_Rate_MarginEnd">15dp</dimen>
+    <dimen name="RateItemDialogFragment_RatingBar_Rate_MarginTop">15dp</dimen>
+    <dimen name="RateItemDialogFragment_ImageView_Submit_Width">30dp</dimen>
+    <dimen name="RateItemDialogFragment_ImageView_Submit_Height">30dp</dimen>
+    <dimen name="RateItemDialogFragment_ImageView_Submit_Margin">15dp</dimen>
+    <dimen name="RateItemDialogFragment_RateSentence_MarginTop">10dp</dimen>
+    <dimen name="RateItemDialogFragment_RateSentence_TextSize">18dp</dimen>
+    <dimen name="RateItemDialogFragment_ImageView_EditRate_Margin">10dp</dimen>
+
+    <!-- AdminActivity -->
+    <dimen name="AdminActivity_FloatingActionButton_Add_Margin">9dp</dimen>
+    <dimen name="AdminActivity_LinearLayout_MarginBottom">75dp</dimen>
+    <dimen name="AdminActivity_LinearLayout_MarginEnd">9dp</dimen>
+    <dimen name="AdminActivity_CardCornerRadius">5dp</dimen>
+    <dimen name="AdminActivity_CardElevation">3dp</dimen>
+    <dimen name="AdminActivity_TextView_AddToAnnouncement_Padding">3dp</dimen>
+    <dimen name="AdminActivity_TextView_AddToMenu_Padding">3dp</dimen>
+    <dimen name="AdminActivity_CardView_MarginTop">13dp</dimen>
+
+
+</resources>

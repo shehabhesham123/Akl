@@ -1,0 +1,20 @@
+<vector android:height="24dp" android:viewportHeight="464"
+    android:viewportWidth="464" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#4799CF" android:pathData="M448,440h-16c-8.837,0 -16,-7.163 -16,-16V288c0,-8.837 7.163,-16 16,-16h32v152C464,432.837 456.837,440 448,440z"/>
+    <path android:fillColor="#4799CF" android:pathData="M40,264h16c8.837,0 16,7.163 16,16v136c0,8.837 -7.163,16 -16,16H40c-8.837,0 -16,-7.163 -16,-16V280C24,271.163 31.163,264 40,264z"/>
+    <path android:fillColor="#EAEAE8" android:pathData="M432,288v-32c0,-8.837 -7.163,-16 -16,-16V101.472C415.999,77.722 426.551,55.2 444.8,40L464,24v264H432z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M432,272h32l0,0v32l0,0h-48l0,0v-16C416,279.163 423.163,272 432,272z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M416,328h24v16h-24V328z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M416,360h24v16h-24V360z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M416,392h24v16h-24V392z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M24,320h24v16H24V320z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M24,352h24v16H24V352z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M24,384h24v16H24V384z"/>
+    <path android:fillColor="#EAEAE8" android:pathData="M32,160h32v112H32V160z"/>
+    <path android:fillColor="#EAEAE8" android:pathData="M48,168c-26.512,0 -48,-21.488 -48,-80V32h96v56C96,146.512 74.512,168 48,168z"/>
+    <path android:fillColor="#EBEBEB" android:pathData="M240,248m-144,0a144,144 0,1 1,288 0a144,144 0,1 1,-288 0"/>
+    <path android:fillColor="#DBDBDB" android:pathData="M240,248m-88,0a88,88 0,1 1,176 0a88,88 0,1 1,-176 0"/>
+    <path android:fillColor="#DBDBDB" android:pathData="M24,32h16v64H24V32z"/>
+    <path android:fillColor="#DBDBDB" android:pathData="M56,32h16v64H56V32z"/>
+    <path android:fillColor="#6CBAE5" android:pathData="M40,264h16c8.837,0 16,7.163 16,16v16l0,0H24l0,0v-16C24,271.163 31.163,264 40,264z"/>
+</vector>

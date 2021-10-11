@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".RateItemDialogFragment"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/RateItemDialogFragment_TextView_RateSentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RateItemDialogFragment_RateSentence"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/RateItemDialogFragment_RateSentence_MarginTop"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/RateItemDialogFragment_RateSentence_TextSize"/>
+
+        <ImageView
+            android:id="@+id/RateItemDialogFragment_ImageView_EditRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="@dimen/RateItemDialogFragment_ImageView_EditRate_Margin"
+            android:visibility="gone"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    <TextView
+        android:id="@+id/RateItemDialogFragment_TextView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/RateItemDialogFragment_TextView_Name_TextSize"
+        android:maxLines="1"
+        android:textColor="@color/accent"
+        android:fontFamily="@font/abel"
+        android:layout_gravity="center"/>
+
+    <RatingBar
+        android:id="@+id/RateItemDialogFragment_RatingBar_Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_marginStart="@dimen/RateItemDialogFragment_RatingBar_Rate_MarginStart"
+        android:layout_marginEnd="@dimen/RateItemDialogFragment_RatingBar_Rate_MarginEnd"
+        android:layout_marginTop="@dimen/RateItemDialogFragment_RatingBar_Rate_MarginTop"
+        android:progressTint="@color/star"
+        android:secondaryProgressTint="@color/star" />
+
+    <ImageView
+        android:id="@+id/RateItemDialogFragment_ImageView_Submit"
+        android:layout_width="@dimen/RateItemDialogFragment_ImageView_Submit_Width"
+        android:layout_height="@dimen/RateItemDialogFragment_ImageView_Submit_Height"
+        android:background="@drawable/send_enable_disable"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/RateItemDialogFragment_ImageView_Submit_Margin"/>
+
+</LinearLayout>

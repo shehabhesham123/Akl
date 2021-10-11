@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/nav_guestPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/nav_background2"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/guest_image"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="7dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_image"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nav_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/allan"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="18dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

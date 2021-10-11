@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:orientation="vertical"
+    android:background="#F7F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/CartActivity_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00000000"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CartActivity_RecyclerView_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/CartActivity_RecyclerView_List_MarginStart"
+            android:layout_marginEnd="@dimen/CartActivity_RecyclerView_List_MarginEnd"
+            android:layout_marginBottom="@dimen/CartActivity_RecyclerView_List_MarginBottom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/CartActivity_LinearLayout_Container_TotalPrice_Margin">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CartActivity_TotalCost"
+                android:textSize="@dimen/CartActivity_TotalPriceSentence_TextSize"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/abel"
+                android:textColor="@color/accent"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="@dimen/CartActivity_LinearLayout_Container_Price_MarginEnd">
+
+                <TextView
+                    android:id="@+id/CartActivity_TextView_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abel"
+                    android:text="0.00"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/CartActivity_TextView_Price_TextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CartActivity_CurrencyCode"
+                    android:fontFamily="@font/abel"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/CartActivity_CurrencyCode_TextSize" />
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <Button
+            android:id="@+id/CartActivity_Button_CheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CartActivity_Checkout"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@color/accent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

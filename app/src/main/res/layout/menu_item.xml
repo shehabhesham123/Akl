@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/MenuItemView_CardElevation"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/MenuItemView_CardCornerRadius"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/MenuItemView_ImageView_Image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/MenuItemView_ImageView_Image_Height"
+            android:contentDescription="@string/MenuItemView_ImageView_image_ContentDescription"
+            android:scaleType="fitXY"
+            android:src="@drawable/pizza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/MenuItemView_TextView_Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/MenuItemView_TextView_Name_Margin"
+            android:gravity="center"
+            android:maxLength="54"
+            android:maxLines="1"
+            android:fontFamily="@font/allan"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/MenuItemView_TextView_Name_TextSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MenuItemView_ImageView_Image" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/MenuItemView_LinearLayout_Container_Ingredients_Margin"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MenuItemView_TextView_Name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MenuItemView_Ingredients"
+                android:fontFamily="@font/allan"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/MenuItemView_IngredientsSentence_TextSize" />
+
+            <TextView
+                android:id="@+id/MenuItemView_TextView_Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/MenuItemView_TextView_Ingredients_MarginTop"
+                android:fontFamily="@font/abel"
+                android:textColor="@color/primary_text"/>
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/MenuItemView_RatingBar_Rate"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/MenuItemView_RatingBar_Rate_MarginStart"
+            android:layout_marginTop="@dimen/MenuItemView_RatingBar_Rate_MarginTop"
+            android:numStars="5"
+            android:stepSize=".01"
+            android:progressTint="@color/star"
+            android:secondaryProgressTint="@color/star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/MenuItemView_TextView_Rate"
+            android:layout_width="@dimen/MenuItemView_TextView_Rate_Width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/MenuItemView_TextView_Rate_MarginStart"
+            android:layout_marginTop="@dimen/MenuItemView_TextView_Rate_MarginTop"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/MenuItemView_TextView_Rate_TextSize"
+            app:layout_constraintStart_toEndOf="@+id/MenuItemView_RatingBar_Rate"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/MenuItemView_LinearLayout_Container_Price_Margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/MenuItemView_TextView_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/MenuItemView_TextView_Price_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MenuItemView_CurrencyCode"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/MenuItemView_CurrencyCode_TextSize"
+                android:fontFamily="@font/amaranth" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

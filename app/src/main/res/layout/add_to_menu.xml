@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/AddToMenu_Spinner_ItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/spinner"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddToMenu_TextInputEditText_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/AdminActivity_Name_Hint"
+            android:fontFamily="@font/abel"
+            android:inputType="text|textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxStrokeWidth="2dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddToMenu_TextInputEditText_Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/AdminActivity_Ingredients_Hint"
+                android:fontFamily="@font/abel"
+                android:inputType="text|textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxStrokeWidth="2dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddToMenu_TextInputEditText_MaxQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/AdminActivity_MaxQuantity_Hint"
+                android:fontFamily="@font/abel"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxStrokeWidth="2dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddToMenu_TextInputEditText_Discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/AdminActivity_Discount_Hint"
+                android:fontFamily="@font/abel"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AdminActivity_Sizes"
+            android:layout_margin="7dp"
+            android:fontFamily="@font/abel"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/accent"/>
+
+        <TextView
+            android:id="@+id/AddToMenu_TextView_SizesError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FB1100"
+            android:layout_marginStart="7dp"/>
+
+        <ListView
+            android:id="@+id/AddToMenu_ListView_Sizes"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:dividerHeight="0dp"
+            android:divider="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AdminActivity_Images"
+            android:layout_margin="7dp"
+            android:fontFamily="@font/abel"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/accent"/>
+
+        <TextView
+            android:id="@+id/AddToMenu_TextView_ImagesError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FB1100"
+            android:layout_marginStart="7dp"/>
+
+        <ListView
+            android:id="@+id/AddToMenu_ListView_Images"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:dividerHeight="0dp"
+            android:divider="#ffffff"/>
+
+    </LinearLayout>
+
+</ScrollView>

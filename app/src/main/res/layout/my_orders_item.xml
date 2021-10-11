@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/MyOrdersItemView_CardElevation"
+    app:cardCornerRadius="@dimen/MyOrdersItemView_CardCornerRadius">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/MyOrdersItemView_Height"
+        android:src="@drawable/background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MyOrdersItemView_LinearLayout_ContainerOrderId_MarginTop"
+        android:layout_marginStart="@dimen/MyOrdersItemView_LinearLayout_ContainerOrderId_MarginStart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MyOrdersItemView_OrderId"
+            android:textSize="@dimen/MyOrdersItemView_OrderIDSentence_TextSize"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/MyOrdersItemView_TextView_OrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MyOrdersItemView_TextView_OrderId_TextSize"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/primary_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/MyOrdersItemView_LinearLayout_ContainerTotalCost_MarginStart"
+        android:layout_marginTop="@dimen/MyOrdersItemView_LinearLayout_ContainerTotalCost_MarginTop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MyOrdersItemView_TotalCost"
+            android:textSize="@dimen/MyOrdersItemView_TotalCostSentence_TextSize"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/accent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/MyOrdersItemView_TextView_TotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/MyOrdersItemView_TextView_TotalCost_TextSize"
+                android:fontFamily="@font/abel"
+                android:textColor="@color/primary_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MyOrdersItemView_CurrencyCode"
+                android:textSize="@dimen/MyOrdersItemView_CurrencyCode"
+                android:fontFamily="@font/abel"
+                android:layout_marginStart="@dimen/MyOrdersItemView_CurrencyCode_MarginStart"
+                android:textColor="@color/primary_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/MyOrdersItemView_TextView_Reorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/MyOrdersItemView_TextView_Reorder_Height"
+        android:text="@string/MyOrdersItemView_Reorder"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:fontFamily="@font/abel"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@drawable/enable_custom"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white_text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MyOrdersItemView_LinearLayout_ContainerDate_MarginTop"
+        android:layout_marginStart="@dimen/MyOrdersItemView_LinearLayout_ContainerDate_MarginStart"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MyOrdersItemView_TextView_OrderDate_Sentence"
+            android:textSize="@dimen/MyOrdersItemView_TextView_OrderDate_Sentence_TextSize"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:textColor="@color/accent"/>
+
+        <TextView
+            android:id="@+id/MyOrdersItemView_TextView_OrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/abel"
+            android:padding="@dimen/MyOrdersItemView_TextView_OrderDate_Padding"
+            android:layout_gravity="end|center_vertical"
+            android:textSize="@dimen/MyOrdersItemView_TextView_OrderDate_TextSize" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView >

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="#ffffff">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:boxStrokeWidth="2dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddToAnnouncement_TextInputEditText_Announcement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/AdminActivity_Announcement_Hint"
+            android:fontFamily="@font/abel"
+            android:inputType="text|textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddToAnnouncement_TextInputEditText_AnnouncementType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/AdminActivity_TypeOfAnnouncement_Hint"
+            android:fontFamily="@font/abel"
+            android:inputType="text|textCapSentences"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AdminActivity_AnnouncementImage"
+        android:layout_margin="7dp"
+        android:fontFamily="@font/abel"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/accent"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/AddToAnnouncement_TextView_Image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:fontFamily="@font/abel"
+            android:layout_marginEnd="7dp"/>
+
+        <ImageView
+            android:id="@+id/AddToAnnouncement_ImageView_Add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="7dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_24"/>
+
+        <ImageView
+            android:id="@+id/AddToAnnouncement_ImageView_Edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_edit_24"/>
+
+        <ImageView
+            android:id="@+id/AddToAnnouncement_ImageView_Delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_delete_24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

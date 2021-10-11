@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ExitFragment">
+
+    <TextView
+        android:layout_width="@dimen/ExitFragment_Width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:fontFamily="@font/abel"
+        android:textSize="@dimen/ExitFragment_TextSize"
+        android:layout_margin="@dimen/ExitFragment_Margin"
+        android:text="@string/ExitFragment_Question" />
+
+    <TextView
+        android:id="@+id/ExitFragment_TextView_Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ExitFragment_Yes"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginTop="@dimen/ExitFragment_TextView_Yes_MarginTop"
+        android:layout_marginEnd="@dimen/ExitFragment_TextView_Yes_MarginEnd"
+        android:layout_marginBottom="@dimen/ExitFragment_TextView_Yes_MarginBottom"
+        android:fontFamily="@font/abel"
+        android:textSize="@dimen/ExitFragment_TextView_Yes_TextSize"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:id="@+id/ExitFragment_TextView_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ExitFragment_TextView_No_MarginTop"
+        android:layout_marginEnd="@dimen/ExitFragment_TextView_No_MarginEnd"
+        android:text="@string/ExitFragment_No"
+        android:fontFamily="@font/abel"
+        android:textSize="@dimen/ExitFragment_TextView_No_TextSize"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="end" />
+
+</androidx.cardview.widget.CardView>

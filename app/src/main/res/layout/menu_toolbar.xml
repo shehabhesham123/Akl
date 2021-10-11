@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/MenuToolbar_PaddingTop"
+    android:paddingBottom="@dimen/MenuToolbar_PaddingBottom"
+    android:background="@color/primary_light">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/MenuToolbar_Coordinator_Container_Search_Height"
+        android:layout_marginEnd="@dimen/MenuToolbar_Coordinator_Container_Search_MarginEnd"
+        android:layout_marginStart="@dimen/MenuToolbar_Coordinator_Container_Search_MarginStart">
+
+        <EditText
+            android:id="@+id/MenuToolbar_EditText_SearchFlied"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/MenuToolbar_EditText_SearchFlied_Height"
+            android:paddingEnd="@dimen/MenuToolbar_EditText_SearchFlied_PaddingEnd"
+            android:paddingStart="@dimen/MenuToolbar_EditText_SearchFlied_PaddingStart"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:fontFamily="@font/abel"
+            android:textSize="@dimen/MenuToolbar_EditText_SearchFlied_TextSize"
+            android:hint="@string/MenuToolbar_searchHintFood"
+            android:background="@drawable/search_shape"/>
+
+        <ImageView
+            android:id="@+id/MenuToolbar_ImageView_SearchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/MenuToolbar_ImageView_SearchIcon_MarginEnd"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/MenuToolbar_ImageView_ClearSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_clear_24"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="40dp"
+            android:visibility="gone"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ImageView
+        android:id="@+id/MenuToolbar_ImageView_Cart"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:scaleType="center"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/MenuToolbar_ImageView_Cart_MarginEnd"
+        android:src="@drawable/ic_shopping_cart_24"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

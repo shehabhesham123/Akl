@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/MyOrdersFragment_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/MyOrdersFragment_AppBar_Height"
+        android:background="@color/primary_light">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|enterAlways">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/AllOrdersFragment_Order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/MyOrdersFragment_ImageView_Image"
+                    android:layout_width="@dimen/MyOrdersFragment_ImageView_Image_Width"
+                    android:layout_height="@dimen/MyOrdersFragment_ImageView_Image_Height"
+                    android:layout_margin="@dimen/MyOrdersFragment_ImageView_Image_Margin"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_deliver" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/MyOrdersFragment_LinearLayout_Container_OrderId_MarginTop"
+                    android:layout_marginStart="@dimen/AR_MyOrdersFragment_LinearLayout_Container_OrderId_MarginStart">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MyOrdersFragment_OrderId"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/MyOrdersFragment_OrderIDSentence_TextSize"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/MyOrdersFragment_TextView_OrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textSize="@dimen/MyOrdersFragment_TextView_OrderId_TextSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/MyOrdersFragment_LinearLayout_Container_TotalPrice_MarginTop"
+                    android:layout_marginStart="@dimen/AR_MyOrdersFragment_LinearLayout_Container_TotalPrice_MarginStart">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MyOrdersFragment_TotalPrice"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/accent"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/MyOrdersFragment_TotalPriceSentence_TextSize" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom">
+
+                        <TextView
+                            android:id="@+id/MyOrdersFragment_TextView_TotalCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/accent"
+                            android:textSize="@dimen/MyOrdersFragment_TextView_TotalCost_TextSize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/MyOrdersFragment_CurrencyCode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/accent"
+                            android:textSize="@dimen/MyOrdersFragment_CurrencyCode_TextSize" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/MyOrdersFragment_Button_Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/MyOrdersFragment_Button_Edit_Height"
+                    android:text="@string/MyOrdersFragment_Edit"
+                    android:layout_marginTop="@dimen/MyOrdersFragment_Button_Edit_MarginTop"
+                    android:background="@drawable/enable_custom"
+                    android:layout_marginStart="@dimen/AR_MyOrdersFragment_Button_Edit_MarginStart"/>
+
+                <FrameLayout
+                    android:id="@+id/MyOrdersFragment_FrameLayout_Timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom"
+                    android:layout_margin="@dimen/MyOrdersFragment_FrameLayout_Timer_Margin"/>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:id="@+id/MyOrdersFragment_RecyclerView_Orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

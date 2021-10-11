@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">أكل</string>
+    <string name="app_name2">أدمن</string>
+    <string name="restaurant_logo">Restaurant Logo</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="guest_image">Guest Image</string>
+    <string name="mail">"Guest_58273@Restaurant.com"</string>
+    <string name="Announcement_ImageView_Image_Description">صورة الإعلان</string>
+
+    <!--   NavigationMenu     -->
+    <string name="NavigationMenu_Announcement">إعلانات</string>
+    <string name="NavigationMenu_Food">قائمة الطعام</string>
+    <string name="NavigationMenu_Orders">طلباتى</string>
+    <string name="NavigationMenu_Support">دعم</string>
+    <string name="NavigationMenu_Feedback">ردود الفعل</string>
+    <string name="NavigationMenu_Rating">قيم تطبيقانا</string>
+
+    <!--   RatingFragment    -->
+    <string name="RatingFragment_HeadTitleRate">قيم التطبيق</string>
+    <string name="RatingFragment_SecondTitleRate">أخبر الاخرين برأيك</string>
+    <string name="RatingFragment_Cancel">الغاء</string>
+    <string name="RatingFragment_Submit">إرسال</string>
+
+    <!--   FeedbackFragment    -->
+    <string name="FeedbackFragment_FeedBackTitle">ردود الفعل</string>
+    <string name="FeedbackFragment_ExperienceQuestion">كيف كانت تجربتك؟</string>
+    <string name="FeedbackFragment_Hint">إوصف تجربتك</string>
+
+    <!--   MyOrdersFragment    -->
+    <string name="MyOrdersFragment_TotalPrice">"التكليفة الكلية: "</string>
+    <string name="MyOrdersFragment_CurrencyCode">" ج.م"</string>
+    <string name="MyOrdersFragment_OrderId">"رقم الطلب: "</string>
+    <string name="MyOrdersFragment_Edit">تعديل</string>
+
+    <!--   MyOrdersItemView    -->
+    <string name="MyOrdersItemView_Reorder">إعادة الطلب</string>
+    <string name="MyOrdersItemView_OrderId">"رقم الطلب: "</string>
+    <string name="MyOrdersItemView_TotalCost">"التكليفه الكلية: "</string>
+    <string name="MyOrdersItemView_CurrencyCode">" ج.م"</string>
+    <string name="MyOrdersItemView_TextView_OrderDate_Sentence">"التاريخ: "</string>
+
+
+    <!--   ItemDetailsFragment    -->
+    <string name="ItemDetailsFragment_CurrencyCode">" ج.م"</string>
+    <string name="ItemDetailsFragment_Ingredients">المواصفات :</string>
+    <string name="ItemDetailsFragment_Sizes">الحجم</string>
+    <string name="ItemDetailsFragment_Quantity">القمية</string>
+    <string name="ItemDetailsFragment_AddToCart">الاضافه الى عربية المشتريات</string>
+    <string name="ItemDetailsFragment_Reviewers">" مُقَيِم"</string>
+
+    <!--   MenuActivityMenu     -->
+    <string name="AdminActivityMenu_Done">تم</string>
+
+    <!--   MyCartActivity       -->
+    <string name="CartActivity_TotalCost">"التكليفة الكلية: "</string>
+    <string name="CartActivity_CurrencyCode">" ج.م"</string>
+    <string name="CartActivity_Checkout">الدفع</string>
+    <string name="CartActivity_SnackBar">لقد طلبت طلباً ولم يأتى بعد</string>
+    <string name="CartActivity_TextView_Alarm_Text">"لم تستطبع ان تطلب طلب اخر الان بسبب انك طلبت طلب ولم ياتٍ حتى الان"</string>
+    <string name="CartActivity_SnackBar2">نفذ وقت التعديل لهذا الطلب</string>
+
+
+    <!--   CartItemLayout       -->
+    <string name="CartItem_CurrencyCode">" ج.م"</string>
+    <string name="CartItem_Quantity">"القمية: "</string>
+    <string name="CartItem_Size">"الحجم: "</string>
+
+    <!--   SizePriceLayout    -->
+    <string name="ItemDetailsSizePrice_CurrencyCode">" ج.م"</string>
+
+    <!--  Toast  -->
+    <string name="RatingTosatSad">نحن نأمل ان تكتب لنا رايك فى التطبيق لنحسن التطبيق</string>
+    <string name="RatingToastHappy">شكراً لك لتقيمنا ب</string>
+    <string name="Star">نجوم</string>
+    <string name="ToastTitle">اُضيف الى عربية المشتريات</string>
+
+
+    <!-- MenuItemView -->
+    <string name="MenuItemView_Ingredients">المواصفات :</string>
+    <string name="MenuItemView_ImageView_image_ContentDescription">صورة</string>
+    <string name="MenuItemView_CurrencyCode">" ج.م"</string>
+
+    <string name="Food">طعام</string>
+    <string name="Drinks">مشروبات</string>
+    <string name="Desserts">حلويات</string>
+
+    <!-- Exit Fragment-->
+    <string name="ExitFragment_Question">هل تريد الخروج ؟</string>
+    <string name="ExitFragment_Yes">نعم</string>
+    <string name="ExitFragment_No">لا</string>
+
+    <!-- MenuToolbar -->
+    <string name="MenuToolbar_searchHintFood">البحث عن طعام</string>
+    <string name="MenuToolbar_searchHintDrink">البحث عن مشروب</string>
+    <string name="MenuToolbar_searchHintDessert">البحث عن تحليه</string>
+    <string name="MenuToolbar_nullSearch"></string>
+
+    <!-- RateItemDialogFragment -->
+    <string name="RateItemDialogFragment_RateSentence">قم باعطاءنا تقيمك ل</string>
+    <string name="RateItemDialogFragment_RateSentence2">تقيمك ل</string>
+
+    <!-- MenuActivity -->
+    <string name="MenuActivity_SnackBar_Sentence1">تم اضافته من قبل</string>
+    <string name="MenuActivity_SnackBar_Sentence2">تراجع</string>
+
+    <!-- AdminActivity -->
+    <string name="AdminActivity_TextView_AddToAnnouncement_Text">أضف الى الاعلانات</string>
+    <string name="AdminActivity_TextView_AddToMenu_Text">أضف الى قائمة الطعام</string>
+    <string name="AdminActivity_Announcement_Hint">الاعلان</string>
+    <string name="AdminActivity_TypeOfAnnouncement_Hint">نوع الاعلان</string>
+    <string name="AdminActivity_Size_Hint">الحجم مثل(متوسط)</string>
+    <string name="AdminActivity_Price_Hint">السعر مثل(36.99)</string>
+    <string name="AdminActivity_Name_Hint">الاسم</string>
+    <string name="AdminActivity_Ingredients_Hint">المكونات</string>
+    <string name="AdminActivity_MaxQuantity_Hint">اكبر كمية</string>
+    <string name="AdminActivity_Discount_Hint">الخصم(فى المئة)</string>
+    <string name="AdminActivity_Sizes">الاحجام</string>
+    <string name="AdminActivity_Images">الصور</string>
+    <string name="AdminActivity_AnnouncementImage">صورة الاعلان</string>
+    <string name="AdminItemTypeError">يجب عليك اختيار نوع العنصر</string>
+    <string name="AdminNameError">ينبغى عليك ادخال اسم العنصر</string>
+    <string name="AdminNameError2">الحروف الممكنه هى (a~z), (A~Z), (0~9),(أّ~ي) او `-` و مسافة واحده بين الكلمتين</string>
+    <string name="AdminIngredientsError">ينبغى عليك ادخال مكونات العنصر</string>
+    <string name="AdminSizesError">يجب عليك ادخال حجم واحد على الاقل</string>
+    <string name="AdminImagesError">يجب عليك ادخال صوره واحد على الاقل</string>
+    <string name="AdminAnnouncementError">يجب عليك ادخال الاعلان</string>
+    <string name="AdminAnnouncementTypeError">يجب عليك ادخال نوع الاعلان</string>
+    <string name="AdminAnnouncementImageError">ينبغى عليك ادخال صوره الاعلان</string>
+    <string name="AdminAddedSuccessfully">تمت الاضافة بنجاح</string>
+    <string-array name="spinner">
+        <item>أختر النوع </item>
+        <item>طعام</item>
+        <item>مشروب</item>
+        <item>تحليه</item>
+    </string-array>
+
+
+</resources>

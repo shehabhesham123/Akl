@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Akl</string>
+    <string name="app_name2">Admin</string>
+    <string name="restaurant_logo">Restaurant Logo</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="guest_image">Guest Image</string>
+    <string name="mail">"Guest_58273@Restaurant.com"</string>
+    <string name="Announcement_ImageView_Image_Description">Announcement Image</string>
+
+    <!--   NavigationMenu     -->
+    <string name="NavigationMenu_Announcement">Announcements</string>
+    <string name="NavigationMenu_Food">Menu</string>
+    <string name="NavigationMenu_Orders">My orders</string>
+    <string name="NavigationMenu_Support">Support</string>
+    <string name="NavigationMenu_Feedback">Feedback</string>
+    <string name="NavigationMenu_Rating">Rate our app</string>
+
+    <!--   RatingFragment    -->
+    <string name="RatingFragment_HeadTitleRate">Rate this app</string>
+    <string name="RatingFragment_SecondTitleRate">Tell others what you think</string>
+    <string name="RatingFragment_Cancel">Cancel</string>
+    <string name="RatingFragment_Submit">Submit</string>
+
+    <!--   FeedbackFragment    -->
+    <string name="FeedbackFragment_FeedBackTitle">FeedBack</string>
+    <string name="FeedbackFragment_ExperienceQuestion">How was your experience?</string>
+    <string name="FeedbackFragment_Hint">Describe your experience</string>
+
+    <!--   MyOrdersFragment    -->
+    <string name="MyOrdersFragment_TotalPrice">"Total cost: "</string>
+    <string name="MyOrdersFragment_CurrencyCode">" L.E"</string>
+    <string name="MyOrdersFragment_OrderId">"OrderID: "</string>
+    <string name="MyOrdersFragment_Edit">Edit</string>
+
+    <!--   MenuActivityMenu     -->
+    <string name="AdminActivityMenu_Done">Done</string>
+
+    <!-- MenuItemView -->
+    <string name="MenuItemView_Ingredients">Ingredients :</string>
+    <string name="MenuItemView_ImageView_image_ContentDescription">Image</string>
+    <string name="MenuItemView_CurrencyCode">" L.E"</string>
+    <string name="Food">Food</string>
+    <string name="Drinks">Drinks</string>
+    <string name="Desserts">Desserts</string>
+
+    <!--   MyOrdersItemView    -->
+    <string name="MyOrdersItemView_Reorder">Reorder</string>
+    <string name="MyOrdersItemView_OrderId">"OrderID: "</string>
+    <string name="MyOrdersItemView_TotalCost">"Total cost: "</string>
+    <string name="MyOrdersItemView_CurrencyCode">" L.E"</string>
+    <string name="MyOrdersItemView_TextView_OrderDate_Sentence">"Date: "</string>
+
+
+    <!--   ItemDetailsFragment    -->
+    <string name="ItemDetailsFragment_CurrencyCode">" L.E"</string>
+    <string name="ItemDetailsFragment_Ingredients">Ingredients :</string>
+    <string name="ItemDetailsFragment_Sizes">Size</string>
+    <string name="ItemDetailsFragment_Quantity">Quantity</string>
+    <string name="ItemDetailsFragment_AddToCart">Add to cart</string>
+    <string name="ItemDetailsFragment_Reviewers">" Reviewers"</string>
+
+    <!--  CartActivity       -->
+    <string name="CartActivity_TotalCost">Total cost:</string>
+    <string name="CartActivity_CurrencyCode">" L.E"</string>
+    <string name="CartActivity_Checkout">Checkout</string>
+    <string name="CartActivity_SnackBar">You ordered an order and have not come yet</string>
+    <string name="CartActivity_TextView_Alarm_Text">"You can't order now because You ordered an order and have not come yet"</string>
+    <string name="CartActivity_SnackBar2">Run the edit time for this order</string>
+
+    <!--   CartItem      -->
+    <string name="CartItem_CurrencyCode">" L.E"</string>
+    <string name="CartItem_Quantity">"Quantity: "</string>
+    <string name="CartItem_Size">"Size: "</string>
+
+    <!--   ItemDetailsSizePrice    -->
+    <string name="ItemDetailsSizePrice_CurrencyCode">" L.E"</string>
+
+    <!--  Toast  -->
+    <string name="RatingTosatSad">We hope to write your feedBack to improve this app</string>
+    <string name="RatingToastHappy">Thank you for your rate with</string>
+    <string name="Star">Stars</string>
+    <string name="ToastTitle">has been added to cart</string>
+
+    <!-- Exit Fragment-->
+    <string name="ExitFragment_Question">Do you want to exit ?</string>
+    <string name="ExitFragment_Yes">Yes</string>
+    <string name="ExitFragment_No">No</string>
+
+    <!-- MenuToolbar -->
+    <string name="MenuToolbar_searchHintFood">Search for food</string>
+    <string name="MenuToolbar_searchHintDrink">Search for drink</string>
+    <string name="MenuToolbar_searchHintDessert">Search for dessert</string>
+    <string name="MenuToolbar_nullSearch"></string>
+
+    <!-- RateItemDialogFragment -->
+    <string name="RateItemDialogFragment_RateSentence">"Give us your rate for "</string>
+    <string name="RateItemDialogFragment_RateSentence2">"your rate for"</string>
+
+    <!-- MenuActivity -->
+    <string name="MenuActivity_SnackBar_Sentence1">has been added before</string>
+    <string name="MenuActivity_SnackBar_Sentence2">Undo</string>
+
+    <!-- AdminActivity -->
+    <string name="AdminActivity_TextView_AddToAnnouncement_Text">Add to announcements</string>
+    <string name="AdminActivity_TextView_AddToMenu_Text">Add to menu</string>
+    <string name="AdminActivity_Announcement_Hint">Announcement</string>
+    <string name="AdminActivity_TypeOfAnnouncement_Hint">Type of Announcement</string>
+    <string name="AdminActivity_Size_Hint">Size like(Medium)</string>
+    <string name="AdminActivity_Price_Hint">Price like(35.99)</string>
+    <string name="AdminActivity_Name_Hint">Name</string>
+    <string name="AdminActivity_Ingredients_Hint">Ingredients</string>
+    <string name="AdminActivity_MaxQuantity_Hint">Max quantity</string>
+    <string name="AdminActivity_Discount_Hint">Discount(Percent)</string>
+    <string name="AdminActivity_Sizes">Sizes</string>
+    <string name="AdminActivity_Images">Images</string>
+    <string name="AdminActivity_AnnouncementImage">Announcement image</string>
+    <string name="AdminItemTypeError">You should select type of item</string>
+    <string name="AdminNameError">You should enter name of item</string>
+    <string name="AdminNameError2">Possible letters is (a~z), (A~Z), (0~9),(أّ~ي) or `-` and one space between two words</string>
+    <string name="AdminIngredientsError">You should enter ingredients of item</string>
+    <string name="AdminSizesError">You must enter at least one size</string>
+    <string name="AdminImagesError">You must enter at least one image</string>
+    <string name="AdminAnnouncementError">You should enter the Announcement</string>
+    <string name="AdminAnnouncementTypeError">You should enter type of Announcement</string>
+    <string name="AdminAnnouncementImageError">You should enter image of Announcement</string>
+    <string name="AdminAddedSuccessfully">Added Successfully</string>
+    <string-array name="spinner">
+       <item>Select item type </item>
+       <item>Food</item>
+       <item>Drink</item>
+       <item>Dessert</item>
+   </string-array>
+
+
+</resources>

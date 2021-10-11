@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/NavigationMenu_Announcement"
+        android:title="@string/NavigationMenu_Announcement"
+        android:checked="true"
+        android:icon="@drawable/ic_announcement"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/NavigationMenu_Food"
+        android:title="@string/NavigationMenu_Food"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/NavigationMenu_Order"
+        android:title="@string/NavigationMenu_Orders"
+        android:icon="@drawable/ic_orders"
+        app:showAsAction="ifRoom"/>
+    <item android:title="@string/NavigationMenu_Support">
+        <menu>
+            <item
+                android:id="@+id/NavigationMenu_Feedback"
+                android:title="@string/NavigationMenu_Feedback"
+                android:icon="@drawable/ic_feedback"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/NavigationMenu_Rate"
+                android:title="@string/NavigationMenu_Rating"
+                android:icon="@drawable/ic_rating"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

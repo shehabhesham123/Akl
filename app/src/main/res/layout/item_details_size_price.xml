@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/ItemDetailsSizePrice_RadioButton_Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_margin="@dimen/ItemDetailsSizePrice_RadioButton_Size_Margin"
+        android:buttonTint="@color/accent"
+        android:fontFamily="@font/abel"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/ItemDetailsSizePrice_RadioButton_Size_TextSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_margin="@dimen/ItemDetailsSizePrice_LinearLayout_ContainerPrice_Margin">
+
+        <TextView
+            android:id="@+id/ItemDetailsSizePrice_TextView_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/ItemDetailsSizePrice_TextView_Price_TextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ItemDetailsSizePrice_CurrencyCode"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/ItemDetailsSizePrice_TextView_CurrencyCode_TextSize" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

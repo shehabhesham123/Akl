@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/Announcement_Height"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/Announcement_ImageView_Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/Announcement_ImageView_Image_Description"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/Image_cover"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Announcement_TextView_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/Announcement_TextView_Date_marginStart"
+            android:layout_marginBottom="@dimen/Announcement_TextView_Date_marginBottom"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/Announcement_TextView_Date_TextSize"
+            app:layout_constraintBottom_toTopOf="@+id/Announcement_TextView_Description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/Announcement_TextView_Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/Announcement_TextView_Type_marginEnd"
+            android:layout_marginBottom="@dimen/Announcement_TextView_Type_marginBottom"
+            android:background="@drawable/announcement_background"
+            android:padding="@dimen/Announcement_TextView_Type_Padding"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/Announcement_TextView_Type_TextSize"
+            app:layout_constraintBottom_toTopOf="@+id/Announcement_TextView_Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toEndOf="@+id/Announcement_TextView_Date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/Announcement_TextView_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/Announcement_TextView_Description_marginBottom"
+            android:maxLines="6"
+            android:paddingStart="@dimen/Announcement_TextView_Description_PaddingStart"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/Announcement_TextView_Description_TextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".RatingDialogFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/RatingDialogFragment_Padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RatingFragment_HeadTitleRate"
+        android:textColor="@color/primary_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RatingFragment_SecondTitleRate"/>
+
+    <RatingBar
+        android:id="@+id/RatingDialogFragment_RatingBar_Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="1"
+        android:layout_marginTop="@dimen/RatingDialogFragment_RatingBar_Rate_MarginTop"
+        android:progressTint="@color/star"
+        android:secondaryProgressTint="@color/star" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/RatingDialogFragment_LinearLayout_ContainerButtons_MarginTop"
+        android:layout_gravity="end">
+
+        <TextView
+            android:id="@+id/RatingDialogFragment_TextView_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/RatingDialogFragment_TextView_Cancel_Padding"
+            android:text="@string/RatingFragment_Cancel"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/RatingDialogFragment_TextView_Cancel_TextSize"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/RatingDialogFragment_TextView_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/RatingDialogFragment_TextView_Submit_Padding"
+            android:layout_marginStart="@dimen/RatingDialogFragment_TextView_Submit_MarginStart"
+            android:text="@string/RatingFragment_Submit"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/RatingDialogFragment_TextView_Submit_TextSize"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>
